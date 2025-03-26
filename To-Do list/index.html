@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>To Do list</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <!-- <button class="darkModeToggle">🌙 Dark Mode</button> -->
+
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+
+            <h1>To Do List</h1>
+            <div class="input-container">
+                <input type="text" class="taskInput" placeholder="Enter your task">
+                <input type="date" class="taskDate">
+                <button class="addTask">Add Task</button>
+            </div>
+            <p class="taskCount">0 Tasks pending</p>
+            
+            <select class="sortTasks">
+                <option value="none">Sort by</option>
+                <option value="asc">Due Date (Earliest First)</option>
+                <option value="desc">Due Date (Latest First)</option>
+            </select>
+            
+            <select class="filterTasks">
+                <!-- <option value="filter">Apply Filter</option> -->
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <ul class="taskList"></ul>
+
+            <div class="update-options-btns">
+                <button class="clearAllTasks">Clear List</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
